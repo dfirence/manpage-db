@@ -1,0 +1,21 @@
+{
+  "name": "manpage-db",
+  "version": "1.0.0",
+  "description": "Structured JSON database of Unix/Linux man pages for system binaries",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "cli": "bun src/cli.ts",
+    "generate": "bun src/cli.ts generate",
+    "query": "bun src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "commander": "^14.0.3"
+  }
+}
